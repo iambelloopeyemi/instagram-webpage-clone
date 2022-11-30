@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Aside navigation bar */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+    width: 18%;
+    border-right: 1px solid rgba(219, 219, 219, 1);
+    background-color: white;
+}
+div .logo {
+    height: 100px;
+}
+div .logo img {
+    box-sizing: content-box;
+    height: 40px;
+    padding: 40px 20px;
+}
+aside nav {
+    height: 1000px;
+}
+aside nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  
+}
+aside nav ul li {
+    margin: 30px 20px 10px; 
+}
+aside nav ul li a {
+    text-decoration: none;
+    color: rgba(38, 38, 38, 1);
+}
+aside nav ul li img {
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 15px;
+}
+aside nav ul li i {
+    font-size: 22px;
+    color: rgba(38, 38, 38, 1);
+    padding-right: 15px;
+} 
+
+/* Story section */
+
+section {
+    background-color: #fafafa;
+    padding: 20px 28%;
+    display: flex;
+}
+.left-side {
+    width: 85%;
+}
+.story {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+}
+.story .stories {
+    width: 20%;
+    margin: 5px;
+}
+.story .stories a img {
+    border-radius: 50%;
+    border: 2px solid palevioletred;
+    padding: 1px;
+    object-fit: cover;
+}
+.story .stories p {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #262626;
+}
+
+/* Post section */
+
+.post-card {
+    margin: 20px 0;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 10px;
+}
+.post-card .post-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.post-card .post-card-title .left {
+    display: flex;
+    align-items: center;
+}
+.post-card .post-card-title .left img { 
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid palevioletred;
+    padding: 1px;
+}
+.post-card .post-card-title .left p {
+    padding-left: 10px;
+    font-weight: bold;
+}
+.post-card .post-card .post-card-content img {
+    width: 100%;
+    object-fit: cover;
+}
+.post-card .post-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 22px;
+}
+.post-card .post-card-footer-content {
+    padding: 0 15px 15px 15px;
+}
+.post-card .post-card-footer-content p {
+    margin-bottom: 3px;
+}
+.post-card .post-card-footer-content .likes {
+    margin-bottom: 8px;
+}
+.post-card .post-card-footer-content .likes span {
+    font-weight: bold;
+}
+.post-card .post-card-footer-content .name span {
+    font-weight: bold;
+}
+.post-card .post-card-footer-content .comments {
+    font-size: 15px;
+    margin-top: 6px;
+}
+.post-card .post-card-footer-content .time {
+    font-size: 10px;
+    margin-top: 10px;
+}
+.post-card .post-card-add-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #efefef;
+}
+.post-card .post-card-add-comment .left {
+    display: flex;
+    align-items: center;
+}
+.post-card .post-card-add-comment .left i {
+    font-size: 22px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+}
+.post-card .post-card-add-comment .left input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.post-card .post-card-add-comment .right {
+    font-weight: 22px;
+}
+.right-side {
+    width: 15%;
+    margin-top: 10px;
+}
+.right-side .profile {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.right-side .profile .profile-left {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.right-side .profile .profile-left .image img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.right-side .profile .profile-left .details .username {
+    padding-bottom: 3px;
+}
+.right-side .profile .profile-left .details .name {
+    width: 200px;  
+}
+.right-side .profile .profile-right a {
+    text-decoration: none;
+}
+.right-side .suggestions {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;  
+}
+.right-side .suggestions .suggestions-left {
+    margin-left: 20px;
+}
+.right-side .follow {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.right-side .follow .follow-left {
+    display: flex;
+    align-items: center;
+    margin-right: 72px;
+}
+.right-side .follow .follow-left .image img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.right-side .follow .follow-left .details .username {
+    padding-bottom: 3px;
+}
+.right-side .follow .follow-left .details .name {
+    width: 200px;  
+}
+.right-side .follow .follow-right a {
+    text-decoration: none;
+}
+.right-side .footer .first {
+    display: inline-block;
+    width: 400px;
+    margin-left: 20px;
+}
+.right-side .footer .first a {
+    text-decoration: none;
+    font-size: 15px;
+}
+.right-side .footer .second {
+    display: inline-block;
+    width: 400px;
+    margin: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+}
